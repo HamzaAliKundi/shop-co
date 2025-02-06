@@ -44,9 +44,9 @@ const Footer = () => {
       <div className="max-w-[1440px] mx-auto px-4 lg:px-16 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Company Info */}
-          <div className="lg:col-span-2 mb-6">
-            <h2 className="text-[32px] font-bold font-['Integral_CF'] mb-6">SHOP.CO</h2>
-            <p className="text-[#666666] font-['Satoshi'] text-base mb-8 max-w-[520px]">
+          <div className="lg:col-span-2 mb-0 md:mb-6 ">
+            <h2 className="text-[32px] font-bold font-['Integral_CF'] mb-2 md:mb-6">SHOP.CO</h2>
+            <p className="text-[#666666] font-['Satoshi'] text-base mb-2 md:mb-8 max-w-[520px]">
               We have clothes that suits your style and which you're proud to wear. From women to men.
             </p>
             <div className="flex gap-4 my-0 md:py-4 lg:py-1">
@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 col-span-3 gap-8">
             {/* Company Links */}
             <div>
-              <h3 className="text-black font-['Satoshi'] text-[14px] lg:text-[16px] font-medium mb-6 decoration-skip-ink-none underline-offset-from-font">COMPANY</h3>
+              <h3 className="text-black font-['Satoshi'] text-[14px] lg:text-[16px] font-medium mb-2 md:mb-6 decoration-skip-ink-none underline-offset-from-font">COMPANY</h3>
               <ul className="space-y-2 lg:space-y-4 md:space-y-4">
                 {companyLinks.map((link) => (
                   <li key={link.href}>
@@ -80,7 +80,7 @@ const Footer = () => {
 
             {/* Help Links */}
             <div>
-              <h3 className="text-black font-['Satoshi'] text-[14px] lg:text-[16px] font-medium mb-6 decoration-skip-ink-none underline-offset-from-font">HELP</h3>
+              <h3 className="text-black font-['Satoshi'] text-[14px] lg:text-[16px] font-medium mb-2 md:mb-6 decoration-skip-ink-none underline-offset-from-font">HELP</h3>
               <ul className="space-y-2 lg:space-y-4 md:space-y-4">
                 {helpLinks.map((link) => (
                   <li key={link.href}>
@@ -94,7 +94,7 @@ const Footer = () => {
 
             {/* FAQ Links */}
             <div>
-              <h3 className="text-black font-['Satoshi'] text-[14px] lg:text-[16px] font-medium mb-6 decoration-skip-ink-none underline-offset-from-font">FAQ</h3>
+              <h3 className="text-black font-['Satoshi'] text-[14px] lg:text-[16px] font-medium mb-2 md:mb-6 decoration-skip-ink-none underline-offset-from-font">FAQ</h3>
               <ul className="space-y-2 lg:space-y-4 md:space-y-4">
                 {faqLinks.map((link) => (
                   <li key={link.href}>
@@ -108,7 +108,7 @@ const Footer = () => {
 
             {/* Resources Links */}
             <div>
-              <h3 className="text-black font-['Satoshi'] text-[14px] lg:text-[16px] font-medium mb-6 decoration-skip-ink-none underline-offset-from-font">RESOURCES</h3>
+              <h3 className="text-black font-['Satoshi'] text-[14px] lg:text-[16px] font-medium mb-2 md:mb-6 decoration-skip-ink-none underline-offset-from-font">RESOURCES</h3>
               <ul className="space-y-2 lg:space-y-4 md:space-y-4">
                 {resourceLinks.map((link) => (
                   <li key={link.href}>
