@@ -9,6 +9,7 @@
     "start": "serve -p 3000"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@tanstack/react-query": "^5.62.11",
     "axios": "^1.7.9",
     "lucide-react": "^0.469.0",

@@ -150,7 +150,7 @@ const SingleProductDetailPage = () => {
 
         {/* Right side - Product details */}
         <div className="w-full lg:w-1/2">
-          <div className="space-y-6">
+          <div className="space-y-3">
             <h1 className="text-[24px] lg:text-[40px] font-[700] leading-[28px] lg:leading-[48px] font-['Integral_CF'] text-left">{product.name}</h1>
             
             <div className="flex items-center gap-1">

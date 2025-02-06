@@ -1,9 +1,13 @@
 import { Star } from "lucide-react";
 import shirt from "/home/shirt.png"
+import { useNavigate } from "react-router-dom";
 
 export const TopSelling = () => {
+    const navigate = useNavigate();
+
     const products = [
         {
+            id: 1,
             image: '/products/vertical-striped-shirt.png',
             title: 'Vertical Striped Shirt',
             price: 212,
@@ -13,6 +17,7 @@ export const TopSelling = () => {
             hasDiscount: true
         },
         {
+            id: 2,
             image: '/products/courage-tshirt.png',
             title: 'Courage Graphic T-shirt',
             price: 145,
@@ -21,6 +26,7 @@ export const TopSelling = () => {
             hasDiscount: false
         },
         {
+            id: 3,
             image: '/products/bermuda-shorts.png',
             title: 'Loose Fit Bermuda Shorts',
             price: 80,
@@ -29,6 +35,7 @@ export const TopSelling = () => {
             hasDiscount: false
         },
         {
+            id: 5,
             image: '/products/skinny-jeans.png',
             title: 'Faded Skinny Jeans',
             price: 210,
@@ -46,7 +53,7 @@ export const TopSelling = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {products.map((product) => (
-                        <div key={product.title} className="group cursor-pointer">
+                        <div key={product.title} onClick={() => navigate(`/product-detail/${product.id}`)} className="group cursor-pointer">
                             <div className="relative aspect-square mb-4 bg-[#F0EEED] rounded-lg overflow-hidden">
                                 <img
                                     src={shirt || product?.title}

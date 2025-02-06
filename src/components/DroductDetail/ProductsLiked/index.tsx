@@ -2,46 +2,45 @@ import { Star } from "lucide-react";
 import shirt from "/home/shirt.png"
 import { useNavigate } from "react-router-dom";
 
-const NewArrivals = () => {
-  const navigate = useNavigate();
+const MayAlsoLikedProducts = () => {
+    const navigate = useNavigate();
 
-  const products = [
-    {
-      id: 1,
-      image: '/products/tshirt-tape.png',
-      title: 'T-shirt with Tape Details', 
-      price: 120,
-      originalPrice: 150,
-      rating: 4.5,
-      reviews: 145,
-      hasDiscount: true
-    },
-    {
-      id: 2,
-      image: '/products/polo-shirt.png',
-      title: 'Polo Shirt with Contrast Trim',
-      price: 89,
-      rating: 4.3,
-      reviews: 95
-    },
-    {
-      id: 3,
-      image: '/products/denim-jacket.png', 
-      title: 'Classic Denim Jacket',
-      price: 199,
-      rating: 4.8,
-      reviews: 215
-    },
-    {
-      id: 4,
-      image: '/products/hoodie.png',
-      title: 'Essential Cotton Hoodie',
-      price: 149,
-      rating: 4.6,
-      reviews: 178
-    }
-  ];
-
+    const products = [
+      {
+        id: 1,
+        image: '/products/tshirt-tape.png',
+        title: 'T-shirt with Tape Details', 
+        price: 120,
+        originalPrice: 150,
+        rating: 4.5,
+        reviews: 145,
+        hasDiscount: true
+      },
+      {
+        id: 2,
+        image: '/products/polo-shirt.png',
+        title: 'Polo Shirt with Contrast Trim',
+        price: 89,
+        rating: 4.3,
+        reviews: 95
+      },
+      {
+        id: 3,
+        image: '/products/denim-jacket.png', 
+        title: 'Classic Denim Jacket',
+        price: 199,
+        rating: 4.8,
+        reviews: 215
+      },
+      {
+        id: 4,
+        image: '/products/hoodie.png',
+        title: 'Essential Cotton Hoodie',
+        price: 149,
+        rating: 4.6,
+        reviews: 178
+      }
+    ];
   return (
     <section className="py-16">
     <div className="max-w-[1440px] mx-auto px-4 lg:px-6">
@@ -88,14 +87,10 @@ const NewArrivals = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center items-center mt-8">
-        <button className="w-[358px] h-[46px] lg:w-[218px] lg:h-[42px] px-[54px] py-2 rounded-[62px] border border-[#0000001A] text-black font-['Satoshi'] text-base hover:bg-gray-200 transition-colors flex items-center justify-center">
-          View All
-        </button>
-      </div>
+     
     </div>
   </section>
-  );
-};
+  )
+}
 
-export default NewArrivals;
+export default MayAlsoLikedProducts
