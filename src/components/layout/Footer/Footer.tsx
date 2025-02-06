@@ -1,7 +1,12 @@
-import facebook from "/social/facebook.png";
-import github from "/social/github.png";
-import instagram from "/social/instagram.png";
-import twitter from "/social/twitter.png";
+import facebook from "/home/facebook.png";
+import github from "/home/github.png";
+import instagram from "/home/instagram.png";
+import twitter from "/home/twitter.png";
+import visa from "/home/visa.png";
+import mastercard from "/home/mastercard.png";
+import paypal from "/home/paypal.png";
+import applepay from "/home/applepay.png";
+import googlepay from "/home/googlepay.png";
 
 const Footer = () => {
   const companyLinks = [
@@ -131,11 +136,11 @@ const Footer = () => {
             Shop.co © 2000-2023, All Rights Reserved
           </p>
           <div className="flex items-center gap-6">
-            <img src="/icons/visa.svg" alt="Visa" className="h-5" />
-            <img src="/icons/mastercard.svg" alt="Mastercard" className="h-5" />
-            <img src="/icons/paypal.svg" alt="PayPal" className="h-5" />
-            <img src="/icons/applepay.svg" alt="Apple Pay" className="h-5" />
-            <img src="/icons/googlepay.svg" alt="Google Pay" className="h-5" />
+            <img src={visa} alt="Visa" className="w-[46.61px] h-[30.03px]" />
+            <img src={mastercard} alt="Mastercard" className="w-[46.61px] h-[30.03px]" />
+            <img src={paypal} alt="PayPal" className="w-[46.61px] h-[30.03px]" />
+            <img src={applepay} alt="Apple Pay" className="w-[46.61px] h-[30.03px]" />
+            <img src={googlepay} alt="Google Pay" className="w-[46.61px] h-[30.03px]" />
           </div>
         </div>
       </div>

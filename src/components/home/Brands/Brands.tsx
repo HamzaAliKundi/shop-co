@@ -1,8 +1,8 @@
-import versac from '/brands/versac.png'
-import zara from '/brands/zara.png'
-import ducci from '/brands/gucci.png'
-import prada from '/brands/prada.png'
-import calvin from '/brands/calvin.png'
+import versac from '/home/versac.png'
+import zara from '/home/zara.png'
+import ducci from '/home/gucci.png'
+import prada from '/home/prada.png'
+import calvin from '/home/calvin.png'
 
 const Brands = () => {
     const brands = [

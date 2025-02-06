@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { CheckCircle2 } from 'lucide-react'
-import leftArrow from "/arrows/left-arrow.png"
-import rightArrow from "/arrows/right-arrow.png"
+import leftArrow from "/home/left-arrow.png"
 
 const Testimonials = () => {
   const testimonials = [

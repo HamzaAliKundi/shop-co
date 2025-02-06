@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import shirt from "/public/products/shirt.png"
+import shirt from "/home/shirt.png"
 
 const NewArrivals = () => {
   const products = [

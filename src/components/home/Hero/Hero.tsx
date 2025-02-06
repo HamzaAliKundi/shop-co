@@ -1,5 +1,4 @@
-import image from '/home/hero.png'
-import banner from "/hero/banner.png";
+import banner from "/home/banner.png";
 
 const Hero = () => {
     return (
