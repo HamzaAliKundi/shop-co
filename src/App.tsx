@@ -10,7 +10,7 @@ function App() {
       <Toaster position="top-center" reverseOrder={false} />
       <Navbar />
       <Routes>
-      <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
     </BrowserRouter>

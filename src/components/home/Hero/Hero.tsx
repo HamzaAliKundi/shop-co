@@ -1,17 +1,9 @@
 import image from '/home/hero.png'
+import banner from "/hero/banner.png";
 
 const Hero = () => {
     return (
-      <section 
-        className="relative px-4 lg:px-6 pt-8 pb-12 min-h-[660px]"
-        style={{
-          backgroundImage: `url(${image})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed'
-        }}
-      >
+      <section className="relative px-4 lg:px-6 pt-8 md:pt-8 lg:pt-0 min-h-[660px] bg-[#F2F0F1]">
         <div className="max-w-[1440px] mx-auto h-full">
           <div className="flex flex-col lg:flex-row items-center justify-between h-full">
             <div className="lg:max-w-[600px] z-10">
@@ -41,6 +33,9 @@ const Hero = () => {
                   <p className="text-gray-600">Happy Customers</p>
                 </div>
               </div>
+            </div>
+            <div className="lg:w-1/2 mt-8 lg:mt-0">
+              <img src={banner} alt="Hero Banner" className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
