@@ -1,9 +1,13 @@
 import { Star } from "lucide-react";
 import shirt from "/home/shirt.png"
+import { useNavigate } from "react-router-dom";
 
 const NewArrivals = () => {
+  const navigate = useNavigate();
+
   const products = [
     {
+      id: 1,
       image: '/products/tshirt-tape.png',
       title: 'T-shirt with Tape Details', 
       price: 120,
@@ -13,6 +17,7 @@ const NewArrivals = () => {
       hasDiscount: true
     },
     {
+      id: 2,
       image: '/products/polo-shirt.png',
       title: 'Polo Shirt with Contrast Trim',
       price: 89,
@@ -20,6 +25,7 @@ const NewArrivals = () => {
       reviews: 95
     },
     {
+      id: 3,
       image: '/products/denim-jacket.png', 
       title: 'Classic Denim Jacket',
       price: 199,
@@ -27,6 +33,7 @@ const NewArrivals = () => {
       reviews: 215
     },
     {
+      id: 4,
       image: '/products/hoodie.png',
       title: 'Essential Cotton Hoodie',
       price: 149,
@@ -37,13 +44,13 @@ const NewArrivals = () => {
 
   return (
     <section className="py-16">
-    <div className="max-w-[1440px] mx-auto px-4 lg:px-6">
+    <div className="max-w-[1440px mx-auto px-4 lg:px-6">
       <h2 className="flex justify-center text-[32px] md:text-[40px] lg:text[48px] font-bold mb-8 font-['Integral_CF']">
         NEW ARRIVALS
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product) => (
-          <div key={product.title} className="group cursor-pointer">
+          <div key={product.title} onClick={() => navigate(`/product-detail/${product.id}`)} className="group cursor-pointer">
             <div className="relative aspect-square mb-4 bg-[#F0EEED] rounded-lg overflow-hidden">
               <img
                 src={shirt || product?.title}
