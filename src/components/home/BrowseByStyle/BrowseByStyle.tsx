@@ -2,8 +2,8 @@ const BrowseByStyle = () => {
   return (
     <section className="py-16">
       <div className="max-w-[1440px] mx-auto px-4 lg:px-6">
-        <div className="bg-gray-200 p-8 rounded-lg shadow-lg w-full mx-auto">
-          <h1 className="text-center text-2xl font-bold mb-6 font-['Roboto']">
+        <div className="bg-[#F0F0F0] px-8 py-8 md:py-16 rounded-[40px] shadow-lg w-full mx-auto">
+          <h1 className="text-center sm:text-[32px] md:text-[40px] lg:text-[48px] font-bold mb-6 font-['Roboto']">
             BROWSE BY DRESS STYLE
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4">

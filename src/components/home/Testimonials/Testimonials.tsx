@@ -93,16 +93,16 @@ const Testimonials = () => {
   return (
     <section className="py-8 sm:py-12 md:py-16 bg-white">
       <div className="max-w-[1440px] mx-auto px-4 lg:px-16">
-        <div className="flex flex-col sm:flex-row justify-between items-center mb-12">
-          <h2 className="text-2xl sm:text-[32px] lg:text-[40px] font-bold font-['Integral_CF'] mb-4 sm:mb-0 text-black">
+        <div className="flex justify-between items-center mb-12">
+          <h2 className="text-2xl text-[32px] md:text-[40px] lg:text-[48px] font-bold font-['Integral_CF'] mb-4 sm:mb-0 text-black">
             OUR HAPPY CUSTOMERS
           </h2>
           <div className="flex gap-6">
-            <button onClick={handlePrev}>
-              <img src={leftArrow} alt="Previous" className="w-[24px] h-[24px] rotate-180" />
+            <button onClick={handlePrev} className="min-w-[24px]">
+              <img src={leftArrow} alt="Previous" className="w-[17.75px] h-[18.75px] md:w-[24px] md:h-[24px] rotate-180" />
             </button>
-            <button onClick={handleNext}>
-              <img src={leftArrow} alt="Next" className="w-[24px] h-[24px]" />
+            <button onClick={handleNext} className="min-w-[24px]">
+              <img src={leftArrow} alt="Next" className="w-[17.75px] h-[18.75px] md:w-[24px] md:h-[24px]" />
             </button>
           </div>
         </div>

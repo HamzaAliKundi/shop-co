@@ -22,7 +22,7 @@ const Brands = () => {
                 key={brand.name}
                 src={brand.image}
                 alt={brand.name}
-                className="w-[116.74px] h-[23.26px] lg:w-[166.48px] lg:h-[33.16px] object-contain"
+                className="w-[116.74px] h-[23.25px] lg:w-[166.48px] lg:h-[33.16px] object-contain"
               />
             ))}
           </div>
