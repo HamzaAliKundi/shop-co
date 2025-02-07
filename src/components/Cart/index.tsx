@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { MinusIcon, PlusIcon, TagIcon, TrashIcon } from '@heroicons/react/24/outline';
+import { useNavigate } from 'react-router-dom';
 
 interface CartItem {
   id: number;
@@ -13,6 +14,8 @@ interface CartItem {
 }
 
 const CartPage = () => {
+  const navigate = useNavigate();
+
   const [cartItems, setCartItems] = useState<CartItem[]>([
     {
       id: 1,
@@ -164,7 +167,7 @@ const CartPage = () => {
               </div>
 
               {/* Checkout Button */}
-              <button className="w-full py-3 bg-black text-white rounded-full hover:bg-gray-800 mt-6">
+              <button onClick={() => navigate("/checkout")} className="w-full py-3 bg-black text-white rounded-full hover:bg-gray-800 mt-6">
                 Go to Checkout
               </button>
             </div>
