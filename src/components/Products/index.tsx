@@ -229,7 +229,7 @@ const ProductsPage = () => {
                     <span className="text-gray-400 text-xs line-through">
                       ${product.originalPrice}
                     </span>
-                    <span className="text-red-500 text-xs">-{product.discount}%</span>
+                    <span className="bg-pink-50 text-red-500 text-xs px-3 py-1 rounded-full">-{product.discount}%</span>
                   </>
                 )}
               </div>
@@ -280,6 +280,8 @@ const ProductsPage = () => {
               ))}
             </div>
 
+            <div className="h-px bg-gray-200 mb-6" />
+
             {/* Price Range */}
             <div className="mb-6">
               <h3 className="font-medium mb-4">Price</h3>
@@ -297,6 +299,8 @@ const ProductsPage = () => {
               </div>
             </div>
 
+            <div className="h-px bg-gray-200 mb-6" />
+
             {/* Colors */}
             <div className="mb-6">
               <h3 className="font-medium mb-4">Colors</h3>
@@ -310,6 +314,8 @@ const ProductsPage = () => {
                 ))}
               </div>
             </div>
+
+            <div className="h-px bg-gray-200 mb-6" />
 
             {/* Sizes */}
             <div className="mb-6">
@@ -329,7 +335,7 @@ const ProductsPage = () => {
               </div>
             </div>
 
-        
+            <div className="h-px bg-gray-200 mb-6" />
 
             <button className="w-full py-3 bg-black text-white rounded-full hover:bg-gray-800">
               Apply Filter
@@ -386,7 +392,7 @@ const ProductsPage = () => {
                     {product.originalPrice && (
                       <>
                         <span className="text-gray-400 line-through">${product.originalPrice}</span>
-                        <span className="text-red-500">-{product.discount}%</span>
+                            <span className="bg-pink-50 text-red-500 text-xs px-3 py-1 rounded-full">-{product.discount}%</span>
                       </>
                     )}
                   </div>
