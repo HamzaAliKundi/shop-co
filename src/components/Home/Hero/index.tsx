@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import banner from "/home/banner.png";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
     return (
       <section className="relative px-4 lg:px-6 pt-8 md:pt-8 lg:pt-0 min-h-[660px] bg-[#F2F0F1]">
         <div className="max-w-[1440px] mx-auto h-full">
@@ -13,7 +16,7 @@ const Hero = () => {
                 Browse through our diverse range of meticulously crafted garments, designed  
                 to bring out your individuality and cater to your sense of style.
               </p>
-              <button className="w-[358px] h-[52px] lg:w-[210px] lg:h-[52px] px-[54px] py-4 rounded-[62px] bg-black text-white font-['Satoshi'] text-base font-medium decoration-skip-ink-none">
+              <button onClick={() => navigate("/products")} className="w-[358px] h-[52px] lg:w-[210px] lg:h-[52px] px-[54px] py-4 rounded-[62px] bg-black text-white font-['Satoshi'] text-base font-medium decoration-skip-ink-none">
                 Shop Now
               </button>
               
